@@ -82,6 +82,31 @@ p {
 .brand h2 span {
   color: crimson;
 }
+
+/*Header section*/
+#header{
+  position:fixed;
+  z-index: 1000;
+  left:0;
+  top:0;
+  width:100vw;
+  height:auto;
+}
+#header .header{
+  min-height:8vh;
+  background-color: rgba(31,30,30, 0.24);
+}
+.header .nav-bar {
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  width:100%;
+  height:100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+
+/*End Header section
 /* hero Section*/
 
 #hero {
@@ -168,6 +193,10 @@ p {
   font-weight: 300;
   letter-spacing: 0.05rem;
 }
+#services .service-top{
+  width:500px;
+  margin:0 auto;
+}
 #services .service-bottom {
   display: flex;
   align-items: center;
@@ -198,7 +227,7 @@ p {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(60deg, #293323 0%, #485563 100%);
-  opacity: 0.7;
+  opacity: .9;
   z-index: -1;
   border-radius:10px ;
   overflow: hidden;
@@ -514,6 +543,13 @@ p {
     }
     /*end about*/
     /*Contact me*/
+    #contact .contact{
+      flex-direction: column;
+      padding:100px 0;
+      align-items: center;
+      justify-content: center;
+      min-width: 20vh;
+    }
     #contact .contact-items{
       width: 100%;
       display: flex;
@@ -539,3 +575,11 @@ p {
     }
     /*End contact*/
   }
+
+      /*Media Query for Tablet*/
+@media only screen and (min-width:1200px){
+      #services .service-bottom .service-item{
+        flex-basis: 22%;
+        margin: 1.5%;
+      }
+    }
